@@ -6,6 +6,7 @@ public class Cricketer {
 	private double Average;
 	private int centuries;
 	private int sixes;
+	private long runs;
 	
 	@Override
 	public String toString() {
@@ -20,6 +21,16 @@ public class Cricketer {
 		Average = average;
 		this.centuries = centuries;
 		this.sixes = sixes;
+	}
+
+	public Cricketer(String name, int jerseyNumber, double average, int centuries, int sixes, long runs) {
+		super();
+		this.name = name;
+		this.jerseyNumber = jerseyNumber;
+		Average = average;
+		this.centuries = centuries;
+		this.sixes = sixes;
+		this.runs = runs;
 	}
 
 	public String getName() {
@@ -61,6 +72,16 @@ public class Cricketer {
 	public void setSixes(int sixes) {
 		this.sixes = sixes;
 	}
+
+	public long getRuns() {
+		return runs;
+	}
+
+	public void setRuns(long runs) {
+		this.runs = runs;
+	}
+	
+	
 	
 	
 
